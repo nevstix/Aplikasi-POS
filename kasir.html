@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kasir - CuanKu POS</title>
+
+<link rel="stylesheet" href="kasir.css">
+
+</head>
+<body>
+
+<header class="topbar">
+
+<div class="back" onclick="location.href='dashboard.html'">
+←
+</div>
+
+<h2>Kasir</h2>
+
+<div class="cart-icon">
+🛒
+<span id="cartCount">0</span>
+</div>
+
+</header>
+
+<div class="search-area">
+
+<input
+type="text"
+id="search"
+placeholder="Cari produk...">
+
+</div>
+
+<div class="kategori">
+
+<button class="active">Semua</button>
+
+<button>☕ Minuman</button>
+
+<button>🍜 Makanan</button>
+
+<button>🍫 Snack</button>
+
+<button>🧴 Lainnya</button>
+
+</div>
+
+<div id="productList" class="produk-grid">
+
+<!-- Produk muncul dari kasir.js -->
+
+</div>
+
+<div class="bottom-cart">
+
+<div>
+
+<b>Total</b>
+
+<h3 id="totalHarga">
+Rp0
+</h3>
+
+</div>
+
+<button onclick="window.location.href='keranjang.html'">
+    Lihat Keranjang
+</button>
+
+</div>
+
+<script src="kasir.js"></script>
+
+</body>
+</html>

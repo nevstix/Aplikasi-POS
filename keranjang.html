@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Keranjang - CuanKu POS</title>
+
+<link rel="stylesheet" href="keranjang.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<button class="back-btn" onclick="window.location.href='kasir.html'">
+← Kembali
+</button>
+
+<h2>🛒 Keranjang</h2>
+
+</header>
+
+<div class="cart-container">
+
+<div id="cartList">
+
+<!-- Produk muncul dari keranjang.js -->
+
+</div>
+
+<div class="summary-card">
+
+<div class="summary-row">
+<span>Subtotal</span>
+<span id="subtotal">Rp 0</span>
+</div>
+
+<div class="summary-row">
+<span>PPN (11%)</span>
+<span id="tax">Rp 0</span>
+</div>
+
+<div class="summary-row total">
+<span>Total</span>
+<span id="total">Rp 0</span>
+</div>
+
+<button class="checkout-btn"
+onclick="window.location.href='checkout.html'">
+
+💳 Lanjut Pembayaran
+
+</button>
+
+</div>
+
+</div>
+
+<script src="keranjang.js"></script>
+
+</body>
+</html>

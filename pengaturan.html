@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pengaturan</title>
+
+<link rel="stylesheet" href="pengaturan.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<button class="back-btn"
+onclick="location.href='dashboard.html'">
+
+← Dashboard
+
+</button>
+
+<h2>⚙️ Pengaturan</h2>
+
+</header>
+
+<div class="setting-card">
+
+<h3>🏪 Informasi Toko</h3>
+
+<label>Nama Toko</label>
+
+<input
+type="text"
+id="namaToko"
+placeholder="Contoh: CuanKu Mart">
+
+<label>Alamat</label>
+
+<textarea
+id="alamat"
+placeholder="Masukkan alamat toko"></textarea>
+
+<label>Nomor Telepon</label>
+
+<input
+type="text"
+id="telepon"
+placeholder="08xxxxxxxxxx">
+
+<button class="save-btn"
+onclick="simpanToko()">
+
+💾 Simpan
+
+</button>
+
+</div>
+
+<div class="setting-card">
+
+<h3>🎨 Tampilan</h3>
+
+<button class="orange-btn"
+onclick="gantiTema('orange')">
+
+🟠 Orange
+
+</button>
+
+<button class="dark-btn"
+onclick="gantiTema('dark')">
+
+🌙 Dark Mode
+
+</button>
+
+</div>
+
+<div class="setting-card">
+
+<h3>💾 Data</h3>
+
+<button class="backup-btn"
+onclick="backupData()">
+
+📥 Backup Data
+
+</button>
+
+<button class="reset-btn"
+onclick="resetData()">
+
+🗑 Reset Semua Data
+
+</button>
+
+</div>
+
+<script src="pengaturan.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* ===========================
+   HALAMAN LAPORAN
+=========================== */
+
+.report-container{
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+/* Card Statistik */
+
+.report-card{
+
+    color:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    transition:.3s;
+    animation:fadeUp .5s;
+
+}
+
+.report-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.report-card h3{
+
+    font-size:18px;
+    margin-bottom:10px;
+
+}
+
+.report-card h1{
+
+    font-size:34px;
+    font-weight:bold;
+
+}
+
+/* Warna */
+
+.orange{
+
+    background:linear-gradient(135deg,#ff7a00,#ff9f1c);
+
+}
+
+.green{
+
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+
+}
+
+.blue{
+
+    background:linear-gradient(135deg,#3b82f6,#2563eb);
+
+}
+
+/* Riwayat */
+
+.history-card{
+
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.history-card h2{
+
+    margin-bottom:20px;
+    color:#444;
+
+}
+
+.history-item{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    border-bottom:1px solid #eee;
+    transition:.3s;
+
+}
+
+.history-item:hover{
+
+    background:#fff7f0;
+
+}
+
+.history-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.history-left h4{
+
+    margin-bottom:5px;
+
+}
+
+.history-left p{
+
+    color:#777;
+    font-size:14px;
+
+}
+
+.history-right{
+
+    text-align:right;
+
+}
+
+.history-right h3{
+
+    color:#ff7a00;
+
+}
+
+.empty{
+
+    text-align:center;
+    color:#888;
+    padding:50px;
+    font-size:18px;
+
+}
+
+/* Animasi */
+
+@keyframes fadeUp{
+
+from{
+
+    opacity:0;
+    transform:translateY(20px);
+
+}
+
+to{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.report-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.history-item{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+
+}
+
+.history-right{
+
+    text-align:left;
+
+}
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout - CuanKu POS</title>
+
+<link rel="stylesheet" href="checkout.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<button class="back-btn"
+onclick="window.location.href='keranjang.html'">
+← Kembali
+</button>
+
+<h2>💳 Checkout</h2>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h3>🧾 Ringkasan Pesanan</h3>
+
+<div id="checkoutList">
+
+<!-- Produk akan muncul dari checkout.js -->
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>👤 Data Pelanggan</h3>
+
+<input
+type="text"
+id="customerName"
+placeholder="Nama Pelanggan (Opsional)">
+
+</div>
+
+<div class="card">
+
+<h3>💳 Metode Pembayaran</h3>
+
+<select id="paymentMethod">
+
+<option value="Tunai">💵 Tunai</option>
+
+<option value="QRIS">📱 QRIS</option>
+
+<option value="Transfer">🏦 Transfer Bank</option>
+
+<option value="E-Wallet">👛 E-Wallet</option>
+
+</select>
+
+</div>
+
+<div class="card">
+
+<h3>💰 Rincian Pembayaran</h3>
+
+<div class="row">
+<span>Subtotal</span>
+<b id="subtotal">Rp 0</b>
+</div>
+
+<div class="row">
+<span>PPN 11%</span>
+<b id="tax">Rp 0</b>
+</div>
+
+<div class="row total">
+<span>Total</span>
+<b id="total">Rp 0</b>
+</div>
+
+<input
+type="number"
+id="payment"
+placeholder="Masukkan nominal pembayaran">
+
+<div class="row">
+<span>Kembalian</span>
+<b id="change">Rp 0</b>
+</div>
+
+<button class="pay-btn"
+onclick="bayar()">
+
+✅ Bayar Sekarang
+
+</button>
+
+</div>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

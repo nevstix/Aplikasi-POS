@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tambah Produk</title>
+
+<link rel="stylesheet" href="addproduk.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<button class="back-btn"
+onclick="location.href='produk.html'">
+
+← Kembali
+
+</button>
+
+<h2>Tambah Produk</h2>
+
+</header>
+
+<div class="form-card">
+
+<div class="preview">
+
+<img id="preview"
+src="aset/no-image.png">
+
+</div>
+
+<label>Foto Produk</label>
+
+<input
+type="file"
+id="foto"
+accept="image/*">
+
+<label>Nama Produk</label>
+
+<input
+type="text"
+id="nama"
+placeholder="Masukkan nama produk">
+
+<label>Harga</label>
+
+<input
+type="number"
+id="harga"
+placeholder="Masukkan harga">
+
+<label>Stok</label>
+
+<input
+type="number"
+id="stok"
+placeholder="Masukkan stok">
+
+<label>Kategori</label>
+
+<select id="kategori">
+
+<option>Minuman</option>
+
+<option>Makanan</option>
+
+<option>Snack</option>
+
+<option>Lainnya</option>
+
+</select>
+
+<button class="save-btn"
+onclick="simpanProduk()">
+
+💾 Simpan Produk
+
+</button>
+
+</div>
+
+<script src="tambahproduk.js"></script>
+
+</body>
+
+</html>

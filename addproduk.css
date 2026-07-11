@@ -1,0 +1,143 @@
+/* ==========================
+   TAMBAH PRODUK
+========================== */
+
+.form-card{
+    width:95%;
+    max-width:500px;
+    margin:30px auto;
+    background:#fff;
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    animation:fade .5s;
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Preview Foto */
+
+.preview{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.preview img{
+    width:180px;
+    height:180px;
+    border-radius:20px;
+    object-fit:cover;
+    border:3px dashed #ff7a00;
+    background:#fff8f3;
+    transition:.3s;
+}
+
+.preview img:hover{
+    transform:scale(1.03);
+}
+
+/* Label */
+
+.form-card label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#444;
+}
+
+/* Input */
+
+.form-card input,
+.form-card select{
+
+width:100%;
+padding:14px;
+border:2px solid #eee;
+border-radius:14px;
+font-size:15px;
+outline:none;
+transition:.3s;
+
+}
+
+.form-card input:focus,
+.form-card select:focus{
+
+border-color:#ff7a00;
+box-shadow:0 0 10px rgba(255,122,0,.2);
+
+}
+
+/* Upload */
+
+input[type=file]{
+
+background:#fff8f3;
+cursor:pointer;
+
+}
+
+/* Tombol Simpan */
+
+.save-btn{
+
+width:100%;
+margin-top:25px;
+padding:15px;
+border:none;
+border-radius:15px;
+background:linear-gradient(135deg,#ff7a00,#ff9f1c);
+color:white;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+transition:.25s;
+box-shadow:0 10px 20px rgba(255,122,0,.25);
+
+}
+
+.save-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+.save-btn:active{
+
+transform:scale(.95);
+
+}
+
+/* Responsive */
+
+@media(max-width:600px){
+
+.form-card{
+
+width:92%;
+padding:20px;
+
+}
+
+.preview img{
+
+width:150px;
+height:150px;
+
+}
+
+}

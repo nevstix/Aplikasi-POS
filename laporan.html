@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Laporan Penjualan</title>
+
+<link rel="stylesheet" href="laporan.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<button class="back-btn"
+onclick="location.href='dashboard.html'">
+
+← Dashboard
+
+</button>
+
+<h2>Laporan Penjualan</h2>
+
+</header>
+
+<div class="report-container">
+
+<div class="report-card orange">
+
+<h3>Total Pendapatan</h3>
+
+<h1 id="income">Rp 0</h1>
+
+</div>
+
+<div class="report-card green">
+
+<h3>Total Transaksi</h3>
+
+<h1 id="trx">0</h1>
+
+</div>
+
+<div class="report-card blue">
+
+<h3>Produk Terjual</h3>
+
+<h1 id="sold">0</h1>
+
+</div>
+
+</div>
+
+<div class="history-card">
+
+<h2>🧾 Riwayat Transaksi</h2>
+
+<div id="historyList">
+
+<p class="empty">
+Belum ada transaksi
+</p>
+
+</div>
+
+</div>
+
+<script src="laporan.js"></script>
+
+</body>
+
+</html>

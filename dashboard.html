@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CuanKu POS</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<h2>☰ CuanKu POS</h2>
+
+<div class="profil">
+
+<img src="aset/admin.png">
+
+<div>
+
+<b>Administrator</b>
+
+<p>Selamat Datang 👋</p>
+
+</div>
+
+</div>
+
+</header>
+
+<div class="dashboard">
+
+<div class="menu-card" onclick="location.href='kasir.html'">
+
+<div class="icon">🛒</div>
+
+<h3>Kasir</h3>
+
+<p>Mulai Transaksi</p>
+
+</div>
+
+<div class="menu-card" onclick="location.href='produk.html'">
+
+<div class="icon">📦</div>
+
+<h3>Produk</h3>
+
+<p>Kelola Produk</p>
+
+</div>
+
+<div class="menu-card" onclick="location.href='laporan.html'">
+
+<div class="icon">📊</div>
+
+<h3>Laporan</h3>
+
+<p>Lihat Penjualan</p>
+
+</div>
+<div class="menu-card" onclick="window.location.href='pengaturan.html'">
+    ⚙️ Pengaturan
+</div>
+
+</div>
+
+<div class="card-info">
+
+<div class="info orange">
+
+<h2 id="produk">0</h2>
+
+<p>Total Produk</p>
+
+</div>
+
+<div class="info green">
+
+<h2 id="transaksi">0</h2>
+
+<p>Transaksi Hari Ini</p>
+
+</div>
+
+<div class="info blue">
+
+<h2 id="pendapatan">Rp0</h2>
+
+<p>Pendapatan</p>
+
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("produk").innerHTML =
+JSON.parse(localStorage.getItem("products") || "[]").length;
+
+document.getElementById("transaksi").innerHTML =
+localStorage.getItem("trx") || 0;
+
+document.getElementById("pendapatan").innerHTML =
+localStorage.getItem("income") || "Rp0";
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>
